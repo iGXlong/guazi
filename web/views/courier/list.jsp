@@ -1,7 +1,7 @@
-<%@ page import="com.duyi.bean.User" %>
+<%@ page import="com.gxl.bean.User" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.duyi.service.UserServiceImp" %>
-<%@ page import="com.duyi.util.DateFormatUtil" %><%--
+<%@ page import="com.gxl.service.UserServiceImp" %>
+<%@ page import="com.gxl.util.DateFormatUtil" %><%--
   Created by IntelliJ IDEA.
   User: LWJ
   Date: 2020/1/3

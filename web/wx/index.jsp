@@ -1,4 +1,4 @@
-<%@ page import="com.duyi.bean.User" %><%--
+<%@ page import="com.gxl.bean.User" %><%--
   Created by IntelliJ IDEA.
   User: LWJ
   Date: 2020/1/6

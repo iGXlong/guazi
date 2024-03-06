@@ -1,10 +1,10 @@
-<%@ page import="com.duyi.dao.ExpressDaoImp" %>
-<%@ page import="com.duyi.bean.Express" %>
-<%@ page import="com.duyi.dao.BaseExpressDao" %>
+<%@ page import="com.gxl.dao.ExpressDaoImp" %>
+<%@ page import="com.gxl.bean.Express" %>
+<%@ page import="com.gxl.dao.BaseExpressDao" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.duyi.util.DateFormatUtil" %>
-<%@ page import="com.duyi.service.BaseExpressService" %>
-<%@ page import="com.duyi.service.ExpressServiceImp" %><%--
+<%@ page import="com.gxl.util.DateFormatUtil" %>
+<%@ page import="com.gxl.service.BaseExpressService" %>
+<%@ page import="com.gxl.service.ExpressServiceImp" %><%--
   Created by IntelliJ IDEA.
   User: LWJ
   Date: 2019/12/30

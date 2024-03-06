@@ -1,10 +1,10 @@
-<%@ page import="com.duyi.bean.User" %>
-<%@ page import="com.duyi.service.ExpressServiceImp" %>
-<%@ page import="com.duyi.service.BaseExpressService" %>
-<%@ page import="com.duyi.bean.Express" %>
+<%@ page import="com.gxl.bean.User" %>
+<%@ page import="com.gxl.service.ExpressServiceImp" %>
+<%@ page import="com.gxl.service.BaseExpressService" %>
+<%@ page import="com.gxl.bean.Express" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="com.duyi.util.DateFormatUtil" %><%--
+<%@ page import="com.gxl.util.DateFormatUtil" %><%--
   Created by IntelliJ IDEA.
   User: LWJ
   Date: 2020/1/6

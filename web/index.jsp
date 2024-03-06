@@ -1,4 +1,4 @@
-<%@ page import="com.duyi.util.SessionUtil" %>
+<%@ page import="com.gxl.util.SessionUtil" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
 
@@ -10,13 +10,13 @@
             alert("请先登陆");
             window.location.href="login.jsp";
         </script>
-        <%
+<%
         return;
     }
 
 %>
 
-
+)
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>

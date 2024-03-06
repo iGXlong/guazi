@@ -1,7 +1,7 @@
-<%@ page import="com.duyi.service.BaseUserService" %>
-<%@ page import="com.duyi.service.UserServiceImp" %>
-<%@ page import="com.duyi.service.BaseExpressService" %>
-<%@ page import="com.duyi.service.ExpressServiceImp" %><%--
+<%@ page import="com.gxl.service.BaseUserService" %>
+<%@ page import="com.gxl.service.UserServiceImp" %>
+<%@ page import="com.gxl.service.BaseExpressService" %>
+<%@ page import="com.gxl.service.ExpressServiceImp" %><%--
   Created by IntelliJ IDEA.
   User: LWJ
   Date: 2020/1/3
