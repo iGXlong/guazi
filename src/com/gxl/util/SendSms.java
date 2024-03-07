@@ -1,4 +1,5 @@
 package com.gxl.util;
+
 import java.util.HashMap;
 import java.util.Random;
 
@@ -13,35 +14,40 @@ import com.aliyuncs.profile.DefaultProfile;
 import com.google.gson.Gson;
 
 public class SendSms {
+
     /**
      * 用于随机生成100000 - 999999 范围的随机数字
+     *
      * @return
      */
     public static int random() {
         Random r = new Random();
-        //100000-999999
-        int num = r.nextInt(900000)+100000;
+        // 1000-9999
+        int num = r.nextInt(9000) + 1000;
+
         return num;
     }
 
     /**
      * 向指定手机号码发送短信
+     *
      * @param phoneNumber 手机号码
-     * @param code 验证码内容
+     * @param code        验证码内容
      * @return true表示发送成功 false表示发送失败
      */
-    public static boolean send(String phoneNumber,int code) {
-        return send(phoneNumber, code+"");
+    public static boolean send(String phoneNumber, long code) {
+        return send(phoneNumber, code + "");
     }
 
     /**
      * 向指定手机号码发送短信
+     *
      * @param phoneNumber 手机号码
-     * @param code 验证码内容
+     * @param code        验证码内容
      * @return true表示发送成功 false表示发送失败
      */
-    public static boolean send(String phoneNumber,String code) {
-        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAI4Fbse3NXBBSAmXCu2boP", "spFh5RrKMfoHOEMElDrwOGsrbHBA73");
+    public static boolean send(String phoneNumber, String code) {
+        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAI5tKaV4RdMjXJYrDsacsk", "o7z2ZHhkAFoCY9U5oVl6mRR2801S4v");
         IAcsClient client = new DefaultAcsClient(profile);
 
         CommonRequest request = new CommonRequest();
@@ -51,17 +57,16 @@ public class SendSms {
         request.setAction("SendSms");
         request.putQueryParameter("RegionId", "cn-hangzhou");
         request.putQueryParameter("PhoneNumbers", phoneNumber);
-        request.putQueryParameter("SignName", "itdage");
-        request.putQueryParameter("TemplateCode", "SMS_162110346");
-        //{"code":code,"address":"校园集散中心","phone":"13843838438"}
-        request.putQueryParameter("TemplateParam", "{\"code\":"+code+",\"address\":\"校园集散中心\",\"phone\":\"13843838438\"}");
+        request.putQueryParameter("SignName", "longnote");
+        request.putQueryParameter("TemplateCode", "SMS_465311351");
+        request.putQueryParameter("TemplateParam", "{\"code\":" + code + "}");
         try {
             CommonResponse response = client.getCommonResponse(request);
             System.out.println(response.getData());
             String json = response.getData();
             Gson g = new Gson();
             HashMap result = g.fromJson(json, HashMap.class);
-            if("OK".equals(result.get("Message"))) {
+            if ("OK".equals(result.get("Message"))) {
                 return true;
             }
         } catch (ServerException e) {

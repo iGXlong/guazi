@@ -3,7 +3,7 @@ package com.gxl.test;
 import com.gxl.util.SendSms;
 import org.junit.Test;
 
-public class MyTest {
+public class SmsTest {
 
     @Test
     public void testSendSms() {
