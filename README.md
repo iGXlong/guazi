@@ -3,16 +3,33 @@
 瓜子快递项目
 
 
+# 技术栈
+
+前端：
+- HTML、CSS 和 JavaScript 用于构建页面和交互
+- Bootstrap 和 Layui 用于页面布局和样式
+- jQuery 用于简化 JavaScript 代码
+- Layer插件用于显示消息
+
+后端
+- 服务器端使用 MySQL 数据库
+- Tomcat 服务器
+- Servlet 和 JSP 技术来处理和显示数据
 
 ## 运行环境
 
-apache-tomcat-9.0.52
+java 环境
+- jdk1.8.0_202
 
-jdk1.8.0_202
+Tomcat 版本
+- apache-tomcat-9.0.52
 
-
+Mysql 版本
+-  5.7.44
 
 ## jar包
+
+因为没有使用 maven 管理 Jar 包 所以需要自己下载并引入
 
 **web/WEB-INF/lib**
 
@@ -23,12 +40,9 @@ jdk1.8.0_202
 - commons-codec-1.12.jar（调用微信接口使用的包）
 - json.jar（调用微信接口使用的包）
 
-
-
 ## 数据库配置
 
 src/druid.properties
-
 
 
 ## 微信接口调用

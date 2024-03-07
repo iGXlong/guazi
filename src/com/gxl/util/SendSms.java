@@ -47,7 +47,7 @@ public class SendSms {
      * @return true表示发送成功 false表示发送失败
      */
     public static boolean send(String phoneNumber, String code) {
-        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAI5tKaV4RdMjXJYrDsacsk", "o7z2ZHhkAFoCY9U5oVl6mRR2801S4v");
+        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "", "");
         IAcsClient client = new DefaultAcsClient(profile);
 
         CommonRequest request = new CommonRequest();
